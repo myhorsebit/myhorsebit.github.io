@@ -10,4 +10,4 @@ npm run build
 echo "[3/3] 部署到 GitHub Pages..."
 npm run deploy
 
-echo "✅ 部署完成！请访问：https://myhorsebit.github.io/blog-official/" 
+echo "✅ 部署完成！请访问：https://myhorsebit.github.io/" 

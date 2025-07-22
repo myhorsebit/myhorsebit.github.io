@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import productImg from "./assets/wechat_2025-07-16_231942_096.png";
 
 const PRODUCT_NAME = "内定小马";
 const MAIN_TEXT = "AI 时代 Web Test 助手";
@@ -30,6 +31,11 @@ function App() {
         WebkitBackgroundClip: "text",
         WebkitTextFillColor: "transparent",
       }}>{PRODUCT_NAME}</div>
+      <img
+        src={productImg}
+        alt="产品截图"
+        style={{ width: 320, maxWidth: "90vw", borderRadius: 12, marginBottom: 20, boxShadow: "0 2px 16px 0 rgba(0,0,0,0.10)" }}
+      />
       <div style={{ fontSize: 22, fontWeight: 500, marginBottom: 32, opacity: 0.92 }}>{MAIN_TEXT}</div>
       <a
         href={SUB_TEXT_LINK}
