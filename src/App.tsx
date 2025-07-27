@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import productImg from "./assets/wechat_2025-07-16_231942_096.png";
+import productImg from "./assets/wechat_2025-07-27_223736_827.png";
 
 const PRODUCT_NAME = "内定小马";
 const MAIN_TEXT = "AI 时代 Web Test 助手";
 const SUB_TEXT = "加入用户群，多一些情报🥳";
-const SUB_TEXT_LINK = "https://share.note.youdao.com/s/50VzA4wX";
+const SUB_TEXT_LINK = "https://docs.google.com/document/d/1pYYLSmAVMUPMryCnV8P8mCtTw-vvK2JVjTi5Z-x03P0/";
 const DMG_ARM64 = "https://ark-auto-2102030424-cn-beijing-default.tos-cn-beijing.volces.com/packages/20250727/%E5%86%85%E5%AE%9A%E5%B0%8F%E9%A9%AC-1.0.0-arm64.dmg";
 
 function App() {
