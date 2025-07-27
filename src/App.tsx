@@ -5,7 +5,7 @@ const PRODUCT_NAME = "内定小马";
 const MAIN_TEXT = "AI 时代 Web Test 助手";
 const SUB_TEXT = "加群无料使用内定小马🥳";
 const SUB_TEXT_LINK = "https://share.note.youdao.com/s/50VzA4wX";
-const DMG_ARM64 = "https://ark-auto-2102030424-cn-beijing-default.tos-cn-beijing.volces.com/packages/20250716/%E5%B0%B1%E6%B4%BB%E9%A9%AC-1.0.0-arm64.dmg";
+const DMG_ARM64 = "https://ark-auto-2102030424-cn-beijing-default.tos-cn-beijing.volces.com/packages/20250727/%E5%86%85%E5%AE%9A%E5%B0%8F%E9%A9%AC-1.0.0-arm64.dmg";
 
 function App() {
   const [modal, setModal] = useState<string | null>(null);
