@@ -34,7 +34,7 @@ function App() {
       <img
         src={productImg}
         alt="产品截图"
-        style={{ width: 320, maxWidth: "90vw", borderRadius: 12, marginBottom: 20, boxShadow: "0 2px 16px 0 rgba(0,0,0,0.10)" }}
+        style={{ width: 200, maxWidth: "90vw", borderRadius: 12, marginBottom: 20, boxShadow: "0 2px 16px 0 rgba(0,0,0,0.10)" }}
       />
       <div style={{ fontSize: 22, fontWeight: 500, marginBottom: 32, opacity: 0.92 }}>{MAIN_TEXT}</div>
       <a
