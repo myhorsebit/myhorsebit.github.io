@@ -5,11 +5,11 @@ const PRODUCT_NAME = "内定小马";
 const MAIN_TEXT = "AI 时代 Web Test 助手";
 const SUB_TEXT = "加入用户群，多一些情报🥳";
 const SUB_TEXT_LINK = "https://docs.google.com/document/d/1pYYLSmAVMUPMryCnV8P8mCtTw-vvK2JVjTi5Z-x03P0/";
-const DMG_ARM64 = "https://ark-auto-2102030424-cn-beijing-default.tos-cn-beijing.volces.com/packages/20250727/%E5%86%85%E5%AE%9A%E5%B0%8F%E9%A9%AC-1.0.0-arm64.dmg";
+const DMG_ARM64 = "https://ark-auto-2102030424-cn-beijing-default.tos-cn-beijing.volces.com/packages/20250810/%E5%86%85%E5%AE%9A%E5%B0%8F%E9%A9%AC-1.0.1-arm64.dmg";
+const DMG_INTEL = "https://ark-auto-2102030424-cn-beijing-default.tos-cn-beijing.volces.com/packages/20250810/%E5%86%85%E5%AE%9A%E5%B0%8F%E9%A9%AC-1.0.1.dmg";
+const WINDOWS_EXE = "https://ark-auto-2102030424-cn-beijing-default.tos-cn-beijing.volces.com/packages/20250810/%E5%86%85%E5%AE%9A%E5%B0%8F%E9%A9%AC-1.0.1-win.zip";
 
 function App() {
-  const [modal, setModal] = useState<string | null>(null);
-
   return (
     <div style={{
       minHeight: "100vh",
@@ -62,17 +62,19 @@ function App() {
         >
           .dmg (Apple Silicon)
         </a>
-        <button style={buttonStyle} onClick={() => setModal("intel")}>.dmg (Intel)</button>
-        <button style={buttonStyle} onClick={() => setModal("windows")}>Windows</button>
+        <a
+          href={DMG_INTEL}
+          style={buttonStyle}
+        >
+          .dmg (Intel)
+        </a>
+        <a
+          href={WINDOWS_EXE}
+          style={buttonStyle}
+        >
+          Windows
+        </a>
       </div>
-      {modal && (
-        <div style={modalMaskStyle} onClick={() => setModal(null)}>
-          <div style={modalBoxStyle} onClick={e => e.stopPropagation()}>
-            <div style={{ fontSize: 18, marginBottom: 12 }}>敬请期待</div>
-            <button style={closeBtnStyle} onClick={() => setModal(null)}>关闭</button>
-          </div>
-        </div>
-      )}
       <div style={{ position: "fixed", bottom: 18, fontSize: 13, color: "#aaa", opacity: 0.7 }}>
         © {new Date().getFullYear()} 内定小马
       </div>
@@ -91,40 +93,6 @@ const buttonStyle: React.CSSProperties = {
   cursor: "pointer",
   boxShadow: "0 2px 12px 0 rgba(0,198,255,0.10)",
   transition: "transform 0.1s, box-shadow 0.1s",
-};
-
-const modalMaskStyle: React.CSSProperties = {
-  position: "fixed",
-  top: 0,
-  left: 0,
-  width: "100vw",
-  height: "100vh",
-  background: "rgba(0,0,0,0.45)",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  zIndex: 1000,
-};
-
-const modalBoxStyle: React.CSSProperties = {
-  background: "#1a2636",
-  borderRadius: 12,
-  padding: "32px 40px 24px 40px",
-  boxShadow: "0 4px 32px 0 rgba(0,0,0,0.18)",
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-};
-
-const closeBtnStyle: React.CSSProperties = {
-  marginTop: 10,
-  background: "#00c6ff",
-  color: "#fff",
-  border: "none",
-  borderRadius: 6,
-  padding: "6px 18px",
-  fontSize: 15,
-  cursor: "pointer",
 };
 
 export default App;
