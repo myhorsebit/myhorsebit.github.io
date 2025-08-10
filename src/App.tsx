@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import productImg from "./assets/wechat_2025-07-27_223736_827.png";
 
 const PRODUCT_NAME = "内定小马";
