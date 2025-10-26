@@ -3,11 +3,8 @@ import productImg from "./assets/wechat_2025-07-27_223736_827.png";
 
 const PRODUCT_NAME = "内定小马";
 const MAIN_TEXT = "AI 时代 Web Test 助手";
-const SUB_TEXT = "加入用户群，多一些情报🥳";
-const SUB_TEXT_LINK = "https://docs.google.com/document/d/1pYYLSmAVMUPMryCnV8P8mCtTw-vvK2JVjTi5Z-x03P0/";
-const DMG_ARM64 = "https://ark-auto-2102030424-cn-beijing-default.tos-cn-beijing.volces.com/packages/20250810/%E5%86%85%E5%AE%9A%E5%B0%8F%E9%A9%AC-1.0.1-arm64.dmg";
-const DMG_INTEL = "https://ark-auto-2102030424-cn-beijing-default.tos-cn-beijing.volces.com/packages/20250810/%E5%86%85%E5%AE%9A%E5%B0%8F%E9%A9%AC-1.0.1.dmg";
-const WINDOWS_EXE = "https://ark-auto-2102030424-cn-beijing-default.tos-cn-beijing.volces.com/packages/20250810/%E5%86%85%E5%AE%9A%E5%B0%8F%E9%A9%AC-1.0.1-win.zip";
+const SUB_TEXT = "前往下载";
+const SUB_TEXT_LINK = "https://r3zpy9khqv.feishu.cn/wiki/L19NwaGtYi2zepkoNalcp3Rgnre";
 
 function App() {
   return (
@@ -55,44 +52,11 @@ function App() {
       >
         {SUB_TEXT}
       </a>
-      <div style={{ display: "flex", gap: 18 }}>
-        <a
-          href={DMG_ARM64}
-          style={buttonStyle}
-        >
-          .dmg (Apple Silicon)
-        </a>
-        <a
-          href={DMG_INTEL}
-          style={buttonStyle}
-        >
-          .dmg (Intel)
-        </a>
-        <a
-          href={WINDOWS_EXE}
-          style={buttonStyle}
-        >
-          Windows
-        </a>
-      </div>
       <div style={{ position: "fixed", bottom: 18, fontSize: 13, color: "#aaa", opacity: 0.7 }}>
         © {new Date().getFullYear()} 内定小马
       </div>
     </div>
   );
 }
-
-const buttonStyle: React.CSSProperties = {
-  background: "linear-gradient(90deg, #00c6ff 0%, #0072ff 100%)",
-  color: "#fff",
-  border: "none",
-  borderRadius: 8,
-  padding: "12px 28px",
-  fontSize: 16,
-  fontWeight: 600,
-  cursor: "pointer",
-  boxShadow: "0 2px 12px 0 rgba(0,198,255,0.10)",
-  transition: "transform 0.1s, box-shadow 0.1s",
-};
 
 export default App;
